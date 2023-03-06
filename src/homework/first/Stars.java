@@ -18,7 +18,7 @@ public class Stars {
             for (int j = 0; j < column; j++) {
                 System.out.print(template);
             }
-            System.out.print("\n"); // Перемещение указателя на следующую строку
+            System.out.println();
         }
     }
 }

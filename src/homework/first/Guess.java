@@ -14,7 +14,7 @@ public class Guess {
         System.out.println("Я загадал число. У тебя " + maxAttempts + " попыток угадать.");
         try (Scanner scanner = new Scanner(System.in)) {
             int input;
-            for (int attempt = 1; attempt < maxAttempts; attempt++) {
+            for (int attempt = 1; attempt < maxAttempts + 1; attempt++) {
                 input = scanner.nextInt();
                 if (input == number) {
                     System.out.println("Ты угадал с " + attempt + " попытки");
