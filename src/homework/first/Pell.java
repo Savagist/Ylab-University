@@ -12,7 +12,6 @@ public class Pell {
             }
             System.out.println(pellNumbersWithRecursion(n));
             System.out.println(pellNumbersDefault(n));
-            System.out.println(Integer.MAX_VALUE);
         }
     }
 
