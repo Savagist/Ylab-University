@@ -2,19 +2,21 @@ package homework.first;
 
 import java.util.Scanner;
 
+
 public class Pell {
     public static void main(String[] args) throws Exception {
         try (Scanner scanner = new Scanner(System.in)) {
             int n = scanner.nextInt();
-            while (n < 0 || n > 30) {
+            while (n < 0 || n > 31) {
                 n = scanner.nextInt(); // Проверка 0 < n < 30, и повтор ввода в случае неверного ввода
             }
             System.out.println(pellNumbersWithRecursion(n));
             System.out.println(pellNumbersDefault(n));
+            System.out.println(Integer.MAX_VALUE);
         }
     }
 
-    public static int pellNumbersWithRecursion(int n) {
+    public static long pellNumbersWithRecursion(int n) {
         if (n == 0) {
             return 0;
         } else if (n == 1) {
@@ -24,15 +26,15 @@ public class Pell {
         }
     }
 
-    public static int pellNumbersDefault(int n) {
-        int firstState = 0;
-        int secondState = 1;
+    public static long pellNumbersDefault(int n) {
+        long firstState = 0;
+        long secondState = 1;
         if (n == 0) {
             return 0;
         } else if (n == 1) {
             return 1;
         } else {
-            int value;
+            long value;
             for (int i = 2; i < n+1; i++) {  // Добавляем +1 чтобы посчитать необходимый нам элемент
                 value = 2 * secondState + firstState;
                 firstState = secondState; // Храним только 2 последних значения для пересчета
