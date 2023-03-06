@@ -7,7 +7,7 @@ public class Pell {
     public static void main(String[] args) throws Exception {
         try (Scanner scanner = new Scanner(System.in)) {
             int n = scanner.nextInt();
-            while (n < 0 || n > 31) {
+            while (n < 0 || n > 30) {
                 n = scanner.nextInt(); // Проверка 0 < n < 30, и повтор ввода в случае неверного ввода
             }
             System.out.println(pellNumbersWithRecursion(n));
