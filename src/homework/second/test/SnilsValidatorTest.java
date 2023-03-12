@@ -10,7 +10,13 @@ public class SnilsValidatorTest {
             System.out.print("Введите номер снилса: ");
             String snils = scanner.nextLine();
             scanner.close();
-            System.out.println("Проверяемый снилс: " + snils + " - " + new SnilsValidatorImpl().validate(snils));
+            System.out.println("Проверяемый снилс: " + "'" + snils + "'");
+            if (new SnilsValidatorImpl().validate(snils)){
+                System.out.println("Снилс валиден");
+            }
+            else{
+                System.out.println("Снилс не валиден");
+            }
         }
     }
 }
