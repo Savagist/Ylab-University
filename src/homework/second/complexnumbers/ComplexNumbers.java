@@ -1,8 +1,8 @@
 package homework.second.complexnumbers;
 
 public class ComplexNumbers {
-    private double realPart;
-    private double imaginaryPart;
+    private final double realPart;
+    private final double imaginaryPart;
 
     public ComplexNumbers(double realPart) {
         this.realPart = realPart;
@@ -33,18 +33,18 @@ public class ComplexNumbers {
     }
 
     public double getModule() {
-        return Math.sqrt((this.realPart * this.realPart) + (this.imaginaryPart * this.imaginaryPart));
+        return Math.sqrt((realPart * realPart) + (imaginaryPart * imaginaryPart));
     }
 
     public String toString() {
-        if (this.imaginaryPart == 0) {
-            return this.realPart + "";
-        } else if (this.realPart == 0) {
-            return this.imaginaryPart + "i";
-        } else if (this.imaginaryPart < 0) {
-            return this.realPart + " - " + -this.imaginaryPart + "i";
+        if (imaginaryPart == 0) {
+            return realPart + "";
+        } else if (realPart == 0) {
+            return imaginaryPart + "i";
+        } else if (imaginaryPart < 0) {
+            return realPart + " - " + -imaginaryPart + "i";
         } else {
-            return this.realPart + " + " + this.imaginaryPart + "i";
+            return realPart + " + " + imaginaryPart + "i";
         }
     }
 }

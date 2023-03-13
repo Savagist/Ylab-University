@@ -1,26 +1,37 @@
 package homework.second.statsaccumulator;
 
 public class StatsAccumulatorImpl implements StatsAccumulator {
-    private int count;
-    private int min;
-    private int max;
-    private double avg;
+    private Integer count;
+    private Integer min;
+    private Integer max;
+    private Double avg;
 
     public StatsAccumulatorImpl() {
         this.count = 0;
-        this.min = Integer.MAX_VALUE;
-        this.max = Integer.MIN_VALUE;
-        this.avg = 0;
+        this.min = null;
+        this.max = null;
+        this.avg = null;
     }
 
     @Override
     public void add(int value) {
-        this.count++;
-        this.min = Math.min(this.min, value);
-        this.max = Math.max(this.max, value);
-        this.avg = (avg * (count - 1) + value) / count;
-
-
+        count++;
+        if (min == null) {
+            min = value;
+        } else {
+            min = Math.min(min, value);
+        }
+        if (max == null) {
+            max = value;
+        } else {
+            max = Math.max(min, value);
+        }
+        if (avg == null) {
+            avg = (double) value;
+        }
+        else {
+            avg = (avg * (count - 1) + value) / count;
+        }
     }
 
     @Override
