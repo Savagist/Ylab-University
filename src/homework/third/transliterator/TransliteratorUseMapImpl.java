@@ -5,7 +5,7 @@ import java.util.Map;
 public class TransliteratorUseMapImpl implements Transliterator {
     @Override
     public String transliterate(String source) {
-        Map<Character,String> transMap = new HashMap<>();
+        Map<Character,String> transMap = new HashMap<>(33);
         transMap.put('A', "A");
         transMap.put('Б', "B");
         transMap.put('В', "V");
