@@ -14,10 +14,12 @@ public class FileSortTest {
         String unsortedFile = "src" + File.separator + "homework" + File.separator + "third" + File.separator + "filesort" + File.separator + "unsorted.txt";
         System.out.println("Start: " + new Date());
         File dataFile = new Generator().generate(unsortedFile, 100);
-        System.out.println("Проверка после генерации: " + new Validator(dataFile).isSorted());
+        System.out.println("Файл сгенерирован: " + new Date());
+        System.out.println("Проверка после генерации: " + new Date() + " = " + new Validator(dataFile).isSorted());
         // Файл с отсортированными значениями находится в папке filesort c названием sorted.txt
         File sortedFile = new Sorter().sortFile(dataFile);
-        System.out.println("Проверка после сортировки: " + new Validator(sortedFile).isSorted());
+        System.out.println("Отсортированыый файл сгенерирован: " + new Date());
+        System.out.println("Проверка после сортировки: " + new Date() + " = " + new Validator(sortedFile).isSorted());
         System.out.println("Stop: " + new Date());
     }
 

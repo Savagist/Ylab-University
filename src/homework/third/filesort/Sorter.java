@@ -46,8 +46,8 @@ public class Sorter {
                 while (scanner.hasNextLong()) {
                     Long stringFromFile = scanner.nextLong();
                     pw.println(stringFromFile);
-                    pw.flush();
                 }
+                pw.flush();
             }
         }
         return outputFile;
@@ -60,6 +60,7 @@ public class Sorter {
             for (Long element : block) {
                 pw.println(element);
             }
+            pw.flush();
         }
         return file.getAbsolutePath();
     }
