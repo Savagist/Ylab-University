@@ -18,7 +18,7 @@ public class FileSortTest {
         System.out.println("Проверка после генерации: " + new Date() + " = " + new Validator(dataFile).isSorted());
         // Файл с отсортированными значениями находится в папке filesort c названием sorted.txt
         File sortedFile = new Sorter().sortFile(dataFile);
-        System.out.println("Отсортированыый файл сгенерирован: " + new Date());
+        System.out.println("Отсортированный файл сгенерирован: " + new Date());
         System.out.println("Проверка после сортировки: " + new Date() + " = " + new Validator(sortedFile).isSorted());
         System.out.println("Stop: " + new Date());
     }
