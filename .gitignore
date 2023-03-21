@@ -29,3 +29,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/homework/third/filesort/sorted.txt
+/src/homework/third/filesort/unsorted.txt
