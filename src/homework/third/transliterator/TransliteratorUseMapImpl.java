@@ -38,7 +38,7 @@ public class TransliteratorUseMapImpl implements Transliterator {
         transMap.put('Ъ', "IE");
         transMap.put('Э', "E");
         transMap.put('Ю', "IU");
-        transMap.put('Я', "YA");
+        transMap.put('Я', "IA");
 
         StringBuilder newLine = new StringBuilder();
         for (int i = 0; i < source.length(); i++) {

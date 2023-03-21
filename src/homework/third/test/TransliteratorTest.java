@@ -10,7 +10,7 @@ public class TransliteratorTest {
         Transliterator transUseArray = new TransliteratorUseArrayImpl();
         // Реализация с использованием мапы
         Transliterator transUseMap = new TransliteratorUseMapImpl();
-        String res = transUseArray.transliterate("НОВОЕ qwerty  123 новое ДОЖДЬ  сообщение №!$%^ СООБЩЕНИЕ...");
+        String res = transUseArray.transliterate("НОВОЕ qwerty 123 новое ДОЖДЬ сообщение №!$%^ СООБЩЕНИЕ...");
         String res1 = transUseMap.transliterate("НОВОЕ qwerty 123 новое ДОЖДЬ сообщение №!$%^ СООБЩЕНИЕ...");
         System.out.println(res);
         System.out.println(res1);

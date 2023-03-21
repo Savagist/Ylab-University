@@ -10,7 +10,7 @@ public class TransliteratorUseArrayImpl implements Transliterator {
                 {"О", "O"}, {"П", "P"}, {"Р", "R"}, {"С", "S"}, {"Т", "T"},
                 {"У", "U"}, {"Ф", "F"}, {"Х", "KH"}, {"Ц", "TS"}, {"Ч", "CH"},
                 {"Ш", "SH"}, {"Щ", "SHCH"}, {"Ы", "Y"}, {"Ь", ""}, {"Ъ", "IE"},
-                {"Э", "E"}, {"Ю", "IU"}, {"Я", "YA"}};
+                {"Э", "E"}, {"Ю", "IU"}, {"Я", "IA"}};
         StringBuilder newLine = new StringBuilder();
         boolean isFound;
         for (int i = 0; i < source.length(); i++) {
