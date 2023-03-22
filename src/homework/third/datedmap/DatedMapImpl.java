@@ -3,8 +3,8 @@ package homework.third.datedmap;
 import java.util.*;
 
 public class DatedMapImpl implements DatedMap {
-    Map<String, String> map;
-    Map<String,Date> dates;
+    private final Map<String, String> map;
+    private final Map<String,Date> dates;
 
     public DatedMapImpl() {
         this.map = new HashMap<>();
