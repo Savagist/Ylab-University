@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
 /.idea
+.idea/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
@@ -29,5 +30,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-/src/homework/third/filesort/sorted.txt
-/src/homework/third/filesort/unsorted.txt
+/src/main/java/ru/ylab/third/filesort/sorted.txt
+/src/main/java/ru/ylab/third/filesort/unsorted.txt
+/target/
